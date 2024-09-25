@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery</title>
+    <!-- CDN Links - Content Delivery Network -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- background-image: url("./assets/images/Image.png") -->
+    <div
+      class="container relative bg-[url('./assets/images/Image.png')] bg-center max-w-full text-white min-h-screen"
+    >
+      <!-- justify-content: space-between, space-around, space-evenly -->
+      <!-- Align items: center -->
+      <nav class="flex justify-between items-center p-8 cursor-pointer">
+        <img src="./assets/images/logo.png" class="w-28" alt="Logo" />
+        <ul class="flex gap-8">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <span class=""><i class="fa-solid fa-cart-shopping text-2xl"></i></span>
+      </nav>
+      <!-- 
+      m-t
+      m-l
+      m-r
+      m-b
+      margin
+      p-t
+      p-l
+      p-r
+      p-b
+      padding
+      line-height: 1,2,4
+
+-->
+      <div class="mt-48 ml-8 max-w-2xl">
+        <h1 class="text-6xl leading-normal font-bold">
+          Groceries <br />
+          Delivery in <span class="font-normal">15 mins</span>
+        </h1>
+        <p>
+          Grocify offer a wide range of products, including fresh products,
+          meats, dairy, baked goods non-persihabek items
+        </p>
+        <div class="mt-8">
+          <!-- Transition: transition-property duration linear, ease, ease-in, ease-in-out, ease-out -->
+          <a
+            href=""
+            class="bg-yellow-300 mr-4 text-black hover:text-white border border-transparent hover:border hover:border-yellow-100 hover:bg-transparent p-3 rounded-3xl transition-all duration-300 ease-linear"
+            >Order Now</a
+          >
+          <a
+            href=""
+            class="hover:bg-yellow-200 p-3 rounded-3xl transition-all duration-300 ease-linear hover:text-black"
+            >Download Now</a
+          >
+        </div>
+      </div>
+      <!-- xl, md, lg, sm -->
+      <img
+        src="./assets/images/grocery-image.png"
+        class="xl:w-1/2 absolute bottom-0 right-20"
+        alt="Grocery"
+      />
+    </div>
+  </body>
+</html>
